@@ -83,3 +83,27 @@ body {
   margin: 2rem;
   text-decoration: none;
 }
+
+/*********HEADER BTN***********/
+.photo-wrap {
+  display: flex;
+  
+}
+
+.profile-img {
+  width: 16rem;
+  border-radius: 7%;
+  padding: 0.3rem;
+  border: 1px solid var(--primary-yellow)
+}
+
+.about-heading {
+  text-transform: uppercase;
+  color: var(--primary-yellow);
+}
+
+@media (max-width: 468px) {
+  .profile-img{
+    width: 10rem;
+  }
+}
