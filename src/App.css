@@ -5,10 +5,12 @@
   --primary-green: #49SE57;
   --primary-yellow: #F4CE14;
   --primary-dark: rgba(255,255,255,0);
+  --primary-red: #ef4035;
+  --primary-hover-red: #f33501;
 }
 
 body {
-  font-family: "Ubuntu";
+  font-family: "Ubuntu", sans-serif;
 }
 
 /*********NAV BAR***********/
@@ -42,3 +44,42 @@ body {
   border-top: 0.1875rem solid var(--primary-yellow);
 }
 
+/*********HEADER***********/
+
+.header-wrapper {
+  position: relative;
+  background: url(Mario-and-Adrian-b.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+
+.main-info {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+.main-info h1 {
+  color: white;
+  margin-top: 4rem;
+}
+
+.main-info h2 {
+  color: var(--primary-yellow);
+}
+
+/*********HEADER BTN***********/
+.btn-main-offer {
+  border: 1px solid var(--primary-red);
+  text-transform: uppercase;
+  border-radius: 1rem;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: white;
+  margin: 2rem;
+  text-decoration: none;
+}
