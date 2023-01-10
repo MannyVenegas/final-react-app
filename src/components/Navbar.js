@@ -23,13 +23,10 @@ const Navbar = () => {
                         <a className="nav-link" href="#">Menu</a>
                     </li>
                     <li className="nav-item">
+                        <a className="nav-link" href="#">Our reviews</a>
+                    </li>
+                    <li className="nav-item">
                         <a className="nav-link" href="#">Reserve</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="#">Order online</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="#">Login</a>
                     </li>
                 </ul>
             </div>
