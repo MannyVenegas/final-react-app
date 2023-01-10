@@ -84,7 +84,7 @@ body {
   text-decoration: none;
 }
 
-/*********HEADER BTN***********/
+/*********ABOUT US***********/
 .photo-wrap {
   display: flex;
   
@@ -106,4 +106,80 @@ body {
   .profile-img{
     width: 10rem;
   }
+}
+
+/*************** MENU(SERVICES) ****************/
+
+.services {
+  text-align: center;
+  padding-bottom: 4rem;
+  background: lightgrey;
+}
+
+.services .circle {
+  position: relative;
+  margin: 0.375rem auto;
+  background: var(--primary-yellow);
+  border-radius: 50%;
+  width: 3.125rem;
+  height: 3.125rem;
+}
+
+.services .img1 {
+  width: 12rem;
+  position: absolute;
+  border-radius: 20%;
+  top: 20%;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.services .img2 {
+  width: 12rem;
+  position: absolute;
+  border-radius: 25%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.services .img3 {
+  width: 10rem;
+  position: absolute;
+  border-radius: 25%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.services .img4 {
+  width: 12rem;
+  position: absolute;
+  border-radius: 25%;
+  top: 37%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.services .box {
+  height: 16rem;
+  border-bottom: 0.3125rem solid var(--primary-yellow);
+  padding: 0.625rem;
+  margin-bottom: 1.875rem;
+  background: whitesmoke;
+  transition: 0.3s ease-in-out;
+}
+
+.services .box h3 {
+  margin-top: 2.2rem;
+}
+.services .box p {
+  margin-top: 1rem;
+  font-size: small;
+}
+
+.services .box:hover {
+  background: 0.3125rem solid var(--primary-dark);
+  color: white;
 }
