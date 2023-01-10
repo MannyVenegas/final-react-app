@@ -1,38 +1,44 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@500&family=Ubuntu:wght@500&display=swap');
+
+:root {
+  --primary-green: #49SE57;
+  --primary-yellow: #F4CE14;
+  --primary-dark: rgba(255,255,255,0);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Ubuntu";
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/*********NAV BAR***********/
+.logo {
+  width: 16.25rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/*-------MENU LINKS------*/
+.nav a.nav-link {
+  font-weight: 400;
+  letter-spacing: 0.0375rem;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-link {
+  text-transform: uppercase;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-nav > li > a {
+  margin-right: 0.70rem;
+  margin-left: 0.70rem;
+  color: black;
+  border-top:  0.1875rem solid var(--primary-dark);
 }
+
+.navbar-nav > li > a.active, .navbar-nav > li > a:focus {
+  border-top: 0.1875rem solid var(--primary-yellow);
+}
+
+.navbar-nav > li > a:hover {
+  border-top: 0.1875rem solid var(--primary-yellow);
+}
+
