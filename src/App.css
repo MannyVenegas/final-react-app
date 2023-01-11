@@ -312,3 +312,15 @@ input.form-control {
 textarea.form-control {
   margin: -0.3rem;
 }
+
+@media (max-width) {
+  .reserve-header {
+    overflow-x: hidden;
+  }
+  .reserve-header .container {
+    padding: 0 1rem;
+  }
+  .reserve-header p {
+    padding: 0 0.4rem;
+  }
+};
