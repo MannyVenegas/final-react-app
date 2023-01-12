@@ -54,7 +54,7 @@ const Booking = () => {
                             </div>
                             <div className="text-center">
                                 <label>No. of people {people} </label>
-                                <input type="range" min="0" max="10" value={people} onChange={(e) => {setPeople(e.target.value)}}/>
+                                <input type="number" min="0" max="10" value={people} onChange={(e) => {setPeople(e.target.value)}}/>
                             </div>
                             <div className="text-center">
                                 <label>Date:</label>
