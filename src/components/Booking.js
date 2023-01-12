@@ -4,7 +4,6 @@ import ReactDatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import setHours from "date-fns/setHours";
 import setMinutes from "date-fns/setMinutes";
-import subDays from "date-fns/subDays";
 
 const booked = [
     new Date(2023, 0, 14),
