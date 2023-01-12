@@ -1,18 +1,37 @@
 import React, {useState} from "react";
 import { validateEmail } from "../utils";
+import ReactDatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
+import setHours from "date-fns/setHours";
+import setMinutes from "date-fns/setMinutes";
+import subDays from "date-fns/subDays";
+
+const booked = [
+    new Date(2023, 0, 14),
+    new Date(2023, 0, 15),
+    new Date(2023, 0, 23),
+    new Date(2023, 0, 25),
+    new Date(2023, 0, 27),
+    new Date(2023, 0, 30),
+    new Date(2023, 1, 1),
+    new Date(2023, 1, 5),
+    new Date(2023, 1,10),
+    new Date(2023, 1,14)
+]
 
 const Booking = () => {
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
     const [email, setEmail] = useState("");
     const [people, setPeople] = useState("0");
-    const [date, setDate] =useState("2023-01-01");
+
+    const [startDate, setStartDate] = useState(setHours(setMinutes(new Date(),30),16));
 
     const getIsFormValid = () => {
         return (
             firstName &&
             validateEmail(email) &&
-            date != "2023-01-01"
+            setStartDate != "2023-01-01"
         );
     };
 
@@ -21,7 +40,7 @@ const Booking = () => {
         setLastName("")
         setEmail("")
         setPeople("0")
-        setDate("2023-01-01")
+        setStartDate(setHours(setMinutes(new Date(),30),16))
     };
 
     const handleSubmit = (e) => {
@@ -58,7 +77,10 @@ const Booking = () => {
                             </div>
                             <div className="text-center">
                                 <label>Date:</label>
-                                <input type="date" value={date} min="2023-01-01" max="2024-01-01" onChange={(e) => {setDate(e.target.value)}}/>
+                                <ReactDatePicker selected={startDate} excludeDates={booked} onChange={(date) => setStartDate(date)} showTimeSelect excludeTimes={[setHours(setMinutes(new Date(), 0), 17),
+        setHours(setMinutes(new Date(), 30), 18),
+        setHours(setMinutes(new Date(), 30), 19),
+        setHours(setMinutes(new Date(), 30), 17),]} dateFormat="MMMM d, yyyy h:mm aa" />
                             </div>
                             <button className="btn-main-offer reserve-btn" type="submit" disabled={!getIsFormValid()}>Reserve a table</button>
                         </div>
