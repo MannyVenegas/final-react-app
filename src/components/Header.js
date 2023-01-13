@@ -8,7 +8,7 @@ const Header = () => {
             We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.
             </h1>
             <h2>CHICAGO, ILL.</h2>
-            <a className='btn-main-offer' href='#'>Book a table</a>
+            <a className='btn-main-offer' href='/reserve'>Book a table</a>
         </div>
     </div>
   )

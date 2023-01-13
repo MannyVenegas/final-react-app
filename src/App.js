@@ -1,7 +1,8 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import About from "./components/About";
-import Booking from "./components/Booking";
+import Body from "./components/Body";
+import BookingPage from "./components/BookingPage";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Menu from "./components/Menu";
@@ -12,11 +13,7 @@ function App() {
   return (
     <>
      <Navbar />
-     <Header />
-     <About />
-     <Menu/>
-     <Testimonials />
-     <Booking />
+     <Body />
      <Footer />
     </>
     );
