@@ -17,16 +17,16 @@ const Navbar = () => {
                         <a className="nav-link" href="#">Home <span className="sr-only"></span></a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">About</a>
+                        <a className="nav-link" href="#about">About</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Menu</a>
+                        <a className="nav-link" href="#services">Menu</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Our reviews</a>
+                        <a className="nav-link" href="#testimonials">Our reviews</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Reserve</a>
+                        <a className="nav-link" href="/reserve">Reserve</a>
                     </li>
                 </ul>
             </div>
